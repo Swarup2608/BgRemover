@@ -4,7 +4,7 @@ const connectDB = async () =>{
     mongoose.connection.on('connected',()=>{
         console.log("Connected with DB!");
     })
-    await mongoose.connect(`${process.env.MONGODB_URI}/bg_remover`);
+    await mongoose.connect(`${process.env.MONGODB_URI}/bgRemover`);
 }
 
 export default connectDB;
